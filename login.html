@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <img src="./images/mobile logo.png" alt="Logo">
+        <hr/>
+    </header>
+    <main>
+        <div class="login-container">
+            <h2>Login</h2>
+    
+            <div class="error-message" id="error-message"></div>
+    
+            <form id="login-form" action="#" method="POST">
+                <!-- Roll Number / College ID Input -->
+                <label for="college-id">Roll No / College ID</label>
+                <input type="text" id="college-id" name="college-id" placeholder="Enter your Roll No or College ID" required>
+                
+                <!-- Password Input -->
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    
+                <!-- Submit Button -->
+                <input type="submit" value="Login">
+                <a>Don't have an account? <a href="./signup.html">Sign Up</a>
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>

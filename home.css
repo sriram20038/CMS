@@ -1,0 +1,178 @@
+h1 {
+    text-align: center;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #FFEC9E;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header img{
+    width: 500px;
+    height: 150px;
+    margin-left: 30%;
+}
+section {
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+nav {
+    display: flex;
+    justify-content: center; /* Center align links */
+    gap: 20px; /* Space between links */
+}
+
+nav a {
+    text-decoration: none; /* Remove underlines */
+    color: #007bff; /* Blue color for links */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Make links bold */
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+nav a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.introduction {
+    padding: 20px;
+    background-color: #fdfdfd; /* Light background for readability */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px auto; /* Center section with spacing */
+    max-width: 1200px; /* Limit content width */
+    font-family: 'Arial', sans-serif; /* Clean and professional font */
+    line-height: 1.6; /* Improve text readability */
+    color: #333; /* Dark text for contrast */
+}
+
+.introduction h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0B2F9F; /* Blue color for emphasis */
+    margin-bottom: 15px; /* Space below the heading */
+    text-align: center; /* Center-align heading */
+}
+
+.introduction p {
+    font-size: 16px;
+    margin-bottom: 15px; /* Space between paragraphs */
+    text-align: justify; /* Align text for better readability */
+}
+
+.introduction p strong {
+    color: #EF5A6F; /* Highlight important text in darker blue */
+    font-weight: bold; /* Make strong text stand out */
+}
+
+
+.events-section, .past-events-section {
+    background-color: #ffffff;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+.event-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+    font-size: 1.6em;
+    color: #333;
+}
+
+.event-card p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.event-card button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.event-card button:hover {
+    background-color: #0d5ba6;
+}
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    /* Header Logo */
+    header img {
+        margin-left: 5%;
+        width: 90%; /* Adjust the width of the logo */
+        height: auto; /* Maintain the aspect ratio of the image */
+    }
+    header h1{
+        font-size: 20px;
+        color: black;
+    }
+
+    /* Introduction Section */
+    .introduction {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .introduction h1 {
+        font-size: 20px;
+    }
+
+    .introduction p {
+        font-size: 14px;
+    }
+
+    /* Navigation Links */
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    /* Event Cards */
+    .event-card {
+        flex-direction: column;
+        align-items: flex-start; /* Stack image and text vertically */
+        padding: 15px;
+    }
+
+    .event-card img {
+        width: 100%; /* Make images responsive */
+        height: auto;
+    }
+
+    .events-section, .past-events-section {
+        padding: 20px;
+        max-width: 100%; /* Ensure sections take full width */
+    }
+
+    .event-card button {
+        width: 100%; /* Make buttons take full width */
+        padding: 15px;
+        font-size: 16px;
+    }
+}

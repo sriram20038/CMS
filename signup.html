@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+
+
+</head>
+<body>
+    <header>
+        <img  src="./images/mobile logo.png" alt="logo"/>
+        <hr/>
+    </header>
+    
+    <main>
+        <div class="login-container">
+        <form>
+            <h1>Signup</h1> <!-- Heading at the top -->
+            
+            <label for="college_id">Roll n.o:</label>
+            <input type="text" id="accid" name="college_id" placeholder="Enter your college-id" required>
+
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your college email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <label for="cpassword">Confirm Password:</label>
+            <input type="password" id="cpassword" placeholder="Confirm your password" required>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="show">
+                <label for="show">Show Password</label>
+            </div>
+
+            <label for="role">Role:</label>
+            <select id="role">
+                <option value="Admin">Admin</option>
+                <option value="Club Head" >Club Head</option>
+                <option value="Student" selected>Student</option>
+            </select>
+
+            <input type="button" value="Sign Up">
+        </form>
+        </div>
+    </main>
+    
+</body>
+</html>
